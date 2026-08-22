@@ -2,7 +2,7 @@
 
 START_TIME=$(date +%s)
 
-sleep 10 &   # run sleep in background
+sleep 5 &   # run sleep in background
 wait         # wait for background process to finish
 
 END_TIME=$(date +%s)
