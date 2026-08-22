@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# Read two numbers from the user
-echo "Enter first number:"
-read num1
+read -p "Enter first number: " a
+read -p "Enter second number: " b
 
-echo "Enter second number:"
-read num2
+sum=$((a + b))
 
-# Perform addition
-sum=$((num1 + num2))
-
-# Display the result
+echo "Sum = $sum"
