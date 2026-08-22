@@ -2,10 +2,11 @@
 
 START_TIME=$(date +%s)
 
-sleep 10 &
+sleep 10 &   # run sleep in background
+wait         # wait for background process to finish
 
-END_TIME=$(dtae +%s)
+END_TIME=$(date +%s)
 
-TOTAL_TIME=$($END_TIME-$START_TIME)
+TOTAL_TIME=$((END_TIME - START_TIME))
 
-echo "Script excuted in: $TOTAL_TIME seconds"
+echo "Script executed in: $TOTAL_TIME seconds"
