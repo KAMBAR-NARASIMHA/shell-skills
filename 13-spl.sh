@@ -7,3 +7,4 @@ sleep 5 &
 wait 
 echo "cuurent wroking directory: $PWD"
 echo "current who is running this script: $USER"
+echo "PID of this script: $$"
